@@ -20,7 +20,7 @@ We were given the following requirements:
 10. Availability 24/7 except for maintenance times on Sundays between 2:00am and 6:00am.
 
 ### Team members:
-- Project Leader/Scrum Master & Documentation: Andreas Skotadis
+- Project Leader/Scrum Master, Programmer & Documentation: Andreas Skotadis
 - Lead Developer: Evan Phoon
 - Developer & Testing: Yuanming Huang & Lukas Gaspar
 - Developer & Documentation: Juan Diego Roman
