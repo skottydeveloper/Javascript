@@ -1,0 +1,16 @@
+name,category,description,price
+Steak_frites,Meat,food,$50
+Chicken_confit,Meat,food,$47
+Salmon_en_papillote,Meat,food,$69
+Bouillabaisse,Meat,food,$20
+French_onion_soup,Vegan,food,$15
+Boeuf_bourguignon,Vegan,food,$29
+Quiche_Lorraine,Meat,food,$79
+Croque_monsieur,Vegan,food,$23
+Souffle,Fruit,food,$18
+Paris_brest,Fruit,food,$43
+Hazelnut_dacquoise,Fruit,food,$35
+Frangipane_tart,Fruit,food,$25
+Cassoulet,Meat,food,$30
+Lamb_shank_navarin,Meat,food,$27
+Tarte_tatin,Fruit,food,$14

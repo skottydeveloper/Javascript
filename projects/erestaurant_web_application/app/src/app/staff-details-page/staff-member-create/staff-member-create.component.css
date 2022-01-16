@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  margin-top: 8px;
+}
+
+mat-card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 22rem;
+  padding: 40px;
+}
+button {
+  margin: auto;
+}
+
+mat-form-field,
+textarea {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+#test {
+  text-align: center;
+}
+button {
+  margin-top: 24px;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%
+}
+

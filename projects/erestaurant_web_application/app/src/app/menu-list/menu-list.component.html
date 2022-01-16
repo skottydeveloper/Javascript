@@ -1,0 +1,33 @@
+<br>
+<br>
+<br>
+<div *ngIf="loading" class="fa-4x text-center">
+    <i class="fas fa-spinner fa-spin"></i>
+  </div>
+  <div *ngIf="!loading">
+    <div *ngIf="error">{{ error }}</div>
+    <div *ngIf="!error && items.length">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>
+              <select (change)="filterValues('category', $event.target.value)" class="form-control">
+                <option value="-">Category</option>
+                <option *ngFor="let filter of filters.category" value="{{ filter }}">{{ filter }}</option>
+              </select>
+            </th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items" [routerLink]="[item._id]">
+            <td>{{ item.category }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

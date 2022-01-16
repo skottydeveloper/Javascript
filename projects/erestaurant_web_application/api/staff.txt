@@ -1,0 +1,4 @@
+name, role, email, phone
+john, chef, idk@xddd.com, 0404044242
+bill, waiter, hehe@xd.com, 1234123412
+jim, bartender, gmail@gmail.com, 1234111111

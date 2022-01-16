@@ -1,0 +1,15 @@
+<mat-accordion *ngIf="staffs.length > 0">
+  <div id="wrapper">
+    <mat-expansion-panel *ngFor="let staff of staffs" style="width:60%;">
+      <mat-expansion-panel-header style="font-size:20px;">
+        {{ staff.name }}
+      </mat-expansion-panel-header>
+      <p><span class="StaffFields">role: </span>{{ staff.role }}</p>
+      <p><span class="StaffFields">email: </span>{{ staff.email }}</p>
+      <p><span class="StaffFields">phone: </span>{{ staff.phone }}</p>
+      <button mat-raised-button (click)="delete(staffs.length)"
+    type="submit" color="warn" style="height:48px;width:10%;padding:8px;">Delete</button>
+    </mat-expansion-panel>
+  </div>
+</mat-accordion>
+<p class="info-text mat-body-1" *ngIf="staffs.length == 0">No staff</p>
