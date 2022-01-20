@@ -1,6 +1,6 @@
 # Javascript
 ## Summary
-This repository is a portfolio of code for the Javascript programming language. It consists of projects I have completed, during uni and in my own time.
+This repository is a portfolio of code for the Javascript programming language. It consists of projects I have completed, during my time at university.
 
 ## Notable Projects
 ### eRestaurant Web Application
