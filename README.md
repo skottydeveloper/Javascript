@@ -2,7 +2,7 @@
 ## Summary
 This repository is a portfolio of code for the Javascript programming language. It consists of projects I have completed, during my time at university.
 
-## Larger Projects
+## Notable Projects
 ### eRestaurant Web Application
 
 Video Walkthrough:
