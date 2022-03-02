@@ -1,14 +1,8 @@
-# Javascript
-## Summary
-This repository is a portfolio of code for the Javascript programming language. It consists of projects I have completed, during my time at university.
-
-## Notable Projects
-### eRestaurant Web Application
-
+# eRestaurant Web Application
 Video Walkthrough:
 https://drive.google.com/file/d/1X7iqRnJmFqsS5hTLZ42jgw7voZt5miuK/view
 
-#### Focus and scope:
+## Focus and Scope
 For this project we are tasked to make an online website application for Gabrielle Anderson, owner of Aussie-based French restaurant - named "Le Bistrot d’Andre".
 
 We were given the following requirements:
@@ -23,14 +17,14 @@ We were given the following requirements:
 9. Online response times of three seconds or under.
 10. Availability 24/7 except for maintenance times on Sundays between 2:00am and 6:00am.
 
-#### Team members:
+### Team Members
 - Project Leader/Scrum Master, Programmer & Documentation: Andreas Skotadis
 - Lead Developer: Evan Phoon
 - Developer & Testing: Yuanming Huang & Lukas Gaspar
 - Developer & Documentation: Juan Diego Roman
 - UX/UI Designer: Marcus Ly
 
-#### Technology:
+### Technology Used
 - Wireframes: Balsamiq (Free Tier)
 - Framework: ExpressJS. 
 - Front End: Angular.
