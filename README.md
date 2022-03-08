@@ -6,3 +6,5 @@ This repository is a portfolio of code for the Javascript programming language. 
 ### eRestaurant Web Application
 #### Summary
 Working in a team of six, we created a web application that allows for the user to register and log into the system, book an available table and make/modify a meal order. There's also a page that allows staff members, their roles and personal details being maintained.
+#### Link
+https://github.com/skottydeveloper/Javascript/tree/main/projects/erestaurant_web_application
