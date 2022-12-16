@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Configuration File Manager</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      background-color: #f1f1f1;
+      padding: 15px;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .green-button {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+    }
+
+    .green-button:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .blue-button {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+    }
+
+    .blue-button:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+
+    .container {
+      height: 100px;
+      position: relative;
+    }
+
+    .text-container {
+      height: 570px;
+      background-color: white;
+      position: relative;
+    }
+
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .top-bottom-center {
+      margin: 0;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bottom-center {
+      margin: 0;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      display: block;
+    }
+  </style>
+
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h2>Configuration File Manager</h2>
+  </div>
+
+  <div class="row">
+    <div class="column middle" style="background-color:#bbb;">
+      <div class="text-container">
+        <div class="center">
+          <pre id="textArea" contenteditable spellcheck="false"></pre>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="center">
+          <button id="create" class="button blue-button" onclick="createFile()">Create New File</button>
+          <button id="open" class="button blue-button" onclick="openFile()">Open File</button>
+          <button id="save" class="button blue-button" onclick="saveFile()">Save File</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>SkottyDeveloper © - 2022</p>
+  </div>
+
+</html>

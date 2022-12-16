@@ -1,0 +1,11 @@
+{
+  "name": "tfm",
+  "version": "1.0.0",
+  "description": "Add, edit and save text files.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Andreas Skotadis",
+  "license": "ISC"
+}
