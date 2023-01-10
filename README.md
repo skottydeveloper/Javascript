@@ -1,6 +1,6 @@
 # Javascript/TypeScript
 ## Summary
-This repository is a portfolio of code for the Javascript and TypeScript programming language. It consists of projects I have completed, during uni and in my own time, while learning Javascript and TypeScript.
+This repository is a portfolio of code for the Javascript and TypeScript programming language. It consists of projects I have completed, during uni and in my own time, while learning both languages.
 
 ## Notable Projects
 ### eRestaurant Web Application
