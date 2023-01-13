@@ -55,7 +55,7 @@ const findOneByFood = function(food, done) {
   });
 };
 
-/* 7. Use 'model.findById()' to Search Your Database By _id */
+/* 7. Use 'model.findById()' to Search Your Database By '_id' */
 const findPersonById = function(personId, done) {
   Person.findById(personId, function(err, data) {
     if (err) return console.log(err);
@@ -79,7 +79,7 @@ const findEditThenSave = (personId, done) => {
   });
 };
 
-/* 9. Perform New Updates on a Document Using model.findOneAndUpdate() */
+/* 9. Perform New Updates on a Document Using 'model.findOneAndUpdate()' */
 const findAndUpdate = (personName, done) => {
   const ageToSet = 20;
 
@@ -89,8 +89,12 @@ const findAndUpdate = (personName, done) => {
   })
 };
 
-const removeById = (personId, done) => {
-  done(null /*, data*/);
+/* 10. Delete One Document Using 'model.findByIdAndRemove()' */
+const removeById = function(personId, done) {
+  Person.findByIdAndRemove(personId, (err, removedDoc) => {
+    if(err) return console.log(err);
+    done(null, removedDoc);
+  }); 
 };
 
 const removeManyPeople = (done) => {
