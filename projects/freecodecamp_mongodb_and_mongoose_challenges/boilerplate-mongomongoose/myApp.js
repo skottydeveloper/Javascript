@@ -13,7 +13,7 @@ const personSchema = new Schema({
   favoriteFoods: [String]
 });
 
-/* 3. Create and Save a Person */
+/* 3. Create and Save a Record of a Model */
 const Person = mongoose.model('Person', personSchema);
 
 const createAndSavePerson = function(done) {
@@ -55,8 +55,12 @@ const findOneByFood = function(food, done) {
   });
 };
 
-const findPersonById = (personId, done) => {
-  done(null /*, data*/);
+/* 7. Use 'model.findById()' to Search Your Database By _id */
+const findPersonById = function(personId, done) {
+  Person.findById(personId, function(err, data) {
+    if (err) return console.log(err);
+    done(null, data);
+  });
 };
 
 const findEditThenSave = (personId, done) => {
