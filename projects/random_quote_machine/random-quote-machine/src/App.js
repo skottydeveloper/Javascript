@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [quotes, setQuotes] = useState("");
+
+  const getQuote = () => {
+    fetch("https://type.fit/api/quotes")
+      .then((res) => res.json())
+      .then((data) => {
+        let randomNum = Math.floor(Math.random() * data.length);
+        setQuotes(data[randomNum]);
+      });
+  };
+
+  useEffect(() => {
+    getQuote();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="quote">
+        <p>{quotes.text}</p>
+        <p>{quotes.author}</p>
+        <div className="btnContainer">
+          <button className="btn">Get Quote</button>
+          <a href="" className="btn">Tweet</a>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
