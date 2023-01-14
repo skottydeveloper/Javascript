@@ -21,9 +21,9 @@ const App = () => {
     <div className="App">
       <div className="quote">
         <p>{quotes.text}</p>
-        <p>{quotes.author}</p>
+        <p>- {quotes.author}</p>
         <div className="btnContainer">
-          <button className="btn">Get Quote</button>
+          <button onClick ={getQuote} className="btn">Get Quote</button>
           <a 
             href={`https://twitter.com/intent/tweet?text=${quotes.text}`} 
             target="_blank"
