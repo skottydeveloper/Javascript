@@ -13,11 +13,11 @@
 .quote-box {
   margin: auto;
   width: 100%;
-  max-width: 400px;
-  min-height: 180px;
-  padding: 30px;
+  max-width: 800px;
+  min-height: 500px;
+  padding: 70px;
   background: #d3d3d3;
-  border-radius: 4px;
+  border-radius: 35px;
   box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
 
 p {
   color: #000000;
-  font-size: 17px;
+  font-size: 35px;
   word-wrap: break-word;
 }
 
@@ -38,7 +38,8 @@ p:last-of-type {
 button {
   border: none;
   outline: none;
-  margin-right: 12px;
+  margin-right: 325px;
+  align-items: center;
 }
 
 a {
@@ -47,17 +48,32 @@ a {
   text-align: center;
 }
 
-.new-quote, .tweet-quote {
+.new-quote {
   background: #413efa;
   color: #fff;
-  width: 80px;
-  padding: 7px 0;
-  font-size: 14px;
+  width: 160px;
+  padding: 20px;
+  font-size: 24px;
   border-radius: 4px;
   cursor: pointer;
   transition: all 700ms ease-in-out;
 }
 
-.btn:hover {
+.tweet-quote {
+  background: #413efa;
+  color: #fff;
+  width: 160px;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 700ms ease-in-out;
+}
+
+.new-quote:hover {
+  background: #615eff;
+}
+
+.tweet-quote:hover {
   background: #615eff;
 }
