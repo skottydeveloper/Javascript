@@ -10,7 +10,7 @@
   background: #152782;
 }
 
-.quote {
+.quote-box {
   margin: auto;
   width: 100%;
   max-width: 400px;
@@ -47,7 +47,7 @@ a {
   text-align: center;
 }
 
-.btn {
+.new-quote, .tweet-quote {
   background: #413efa;
   color: #fff;
   width: 80px;
