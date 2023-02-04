@@ -14,5 +14,6 @@ This program is a contacts viewer, where you can view the contacts fetched from 
 https://github.com/skottydeveloper/Javascript/tree/main/projects/contact_manager
 
 ### Random Quote Machine
-This program involves generating a random quote for the user. The user can press the "Get Quote" button to generate another random quote, or simply reload the page to do so. In addition, the user can also share the quote to their Twitter. 
+This program involves generating a random quote for the user. The user can press the "Get Quote" button to generate another random quote, or simply reload the page to do so. In addition, the user can also share the quote to their Twitter.
+#### Link
 https://github.com/skottydeveloper/Javascript/tree/main/projects/random_quote_machine/random-quote-machine
