@@ -75,7 +75,30 @@ export function GoalManager(props: Props) {
     }
   }
 
+  const [emojiPickerIsOpen, setEmojiPickerIsOpen] = useState(false)
+  const hasIcon = () => icon != null
+
+  const pickEmojiOnClick = (emoji: BaseEmoji, event: MouseEvent) => {
+    event.stopPropagation()
+
+    setIcon(emoji.native)
+    setEmojiPickerIsOpen(false)
+
+    const updatedGoal: Goal = {
+      ...props.goal,
+      icon: emoji.native ?? props.goal.icon,
+      name: name ?? props.goal.name,
+      targetDate: targetDate ?? props.goal.targetDate,
+      targetAmount: targetAmount ?? props.goal.targetAmount,
+    }
+
+    dispatch(updateGoalRedux(updatedGoal))
+
+    // TODO(TASK-3) Update database
+  }
+
   return (
+    <>
     <GoalManagerContainer>
       <NameInput value={name ?? ''} onChange={updateNameOnChange} />
 
@@ -107,6 +130,15 @@ export function GoalManager(props: Props) {
         </Value>
       </Group>
     </GoalManagerContainer>
+
+    <EmojiPickerContainer
+      isOpen={emojiPickerIsOpen}
+      hasIcon={hasIcon()}
+      onClick={(event) => event.stopPropagation()}
+    >
+      <EmojiPicker onClick={pickEmojiOnClick} />
+    </EmojiPickerContainer>
+    </>
   )
 }
 
@@ -181,4 +213,10 @@ const StringInput = styled.input`
 
 const Value = styled.div`
   margin-left: 2rem;
+`
+const EmojiPickerContainer = styled.div<EmojiPickerContainerProps>`
+  display: ${(props) => (props.isOpen ? 'flex' : 'none')};
+  position: absolute;
+  top: ${(props) => (props.hasIcon ? '10rem' : '2rem')};
+  left: 0;
 `
