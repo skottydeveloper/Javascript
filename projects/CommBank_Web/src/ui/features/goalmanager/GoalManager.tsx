@@ -93,8 +93,17 @@ export function GoalManager(props: Props) {
     }
 
     dispatch(updateGoalRedux(updatedGoal))
+  }
 
-    // TODO(TASK-3) Update database
+  const [icon, setIcon] = useState<string | null>(null)
+
+  useEffect(() => {
+    setIcon(props.goal.icon)
+  }, [props.goal.id, props.goal.icon])
+
+  const addIconOnClick = (event: React.MouseEvent) => {
+    event.stopPropagation()
+    setEmojiPickerIsOpen(true)
   }
 
   return (
@@ -138,6 +147,18 @@ export function GoalManager(props: Props) {
     >
       <EmojiPicker onClick={pickEmojiOnClick} />
     </EmojiPickerContainer>
+
+    <AddIconButtonContainer hasIcon={hasIcon()}>
+      <TransparentButton onClick={addIconOnClick}>
+        <FontAwesomeIcon icon={faSmile} size="2x" />
+        <AddIconButtonText>Add icon</AddIconButtonText>
+      </TransparentButton>
+    </AddIconButtonContainer>
+
+    <GoalIconContainer shouldShow={hasIcon()}>
+      <GoalIcon icon={goal.icon} onClick={addIconOnClick} />
+    </GoalIconContainer>
+
     </>
   )
 }
@@ -219,4 +240,8 @@ const EmojiPickerContainer = styled.div<EmojiPickerContainerProps>`
   position: absolute;
   top: ${(props) => (props.hasIcon ? '10rem' : '2rem')};
   left: 0;
+`
+
+const GoalIconContainer = styled.div<GoalIconContainerProps>`
+  display: ${(props) => (props.shouldShow ? 'flex' : 'none')};
 `
