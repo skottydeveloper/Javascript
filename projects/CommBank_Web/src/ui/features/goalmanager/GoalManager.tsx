@@ -11,6 +11,11 @@ import { selectGoalsMap, updateGoal as updateGoalRedux } from '../../../store/go
 import { useAppDispatch, useAppSelector } from '../../../store/hooks'
 import DatePicker from '../../components/DatePicker'
 import { Theme } from '../../components/Theme'
+import EmojiPicker from '../../components/EmojiPicker'
+import { BaseEmoji } from 'emoji-mart'
+import { faSmile } from '@fortawesome/free-solid-svg-icons'
+import { TransparentButton } from '../../components/TransparentButton'
+import GoalIcon from '../../features/goalmanager/GoalIcon'
 
 type Props = { goal: Goal }
 export function GoalManager(props: Props) {
@@ -244,4 +249,8 @@ const EmojiPickerContainer = styled.div<EmojiPickerContainerProps>`
 
 const GoalIconContainer = styled.div<GoalIconContainerProps>`
   display: ${(props) => (props.shouldShow ? 'flex' : 'none')};
+`
+
+const AddIconButtonContainer = styled.div<AddIconButtonContainerProps>`
+display: ${(props) => (props.shouldShow ? 'flex' : 'none')};
 `
