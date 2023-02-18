@@ -153,7 +153,7 @@ export function GoalManager(props: Props) {
       <EmojiPicker onClick={pickEmojiOnClick} />
     </EmojiPickerContainer>
 
-    <AddIconButtonContainer hasIcon={hasIcon()}>
+    <AddIconButtonContainer shouldShow={true} hasIcon={hasIcon()}>
       <TransparentButton onClick={addIconOnClick}>
         <FontAwesomeIcon icon={faSmile} size="2x" />
         <AddIconButtonText>Add icon</AddIconButtonText>
