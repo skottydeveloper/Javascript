@@ -83,7 +83,7 @@ export function GoalManager(props: Props) {
   const [emojiPickerIsOpen, setEmojiPickerIsOpen] = useState(false)
   const hasIcon = () => icon != null
 
-  const pickEmojiOnClick = (emoji: BaseEmoji, event: MouseEvent) => {
+  const pickEmojiOnClick = (emoji: BaseEmoji, event: React.MouseEvent) => {
     event.stopPropagation()
 
     setIcon(emoji.native)
