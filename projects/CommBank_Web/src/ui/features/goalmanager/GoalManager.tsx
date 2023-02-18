@@ -169,7 +169,7 @@ export function GoalManager(props: Props) {
 }
 
 type FieldProps = { name: string; icon: IconDefinition }
-type AddIconButtonContainerProps = { shouldShow: boolean }
+type AddIconButtonContainerProps = { shouldShow: boolean, hasIcon: boolean}
 type GoalIconContainerProps = { shouldShow: boolean }
 type EmojiPickerContainerProps = { isOpen: boolean; hasIcon: boolean }
 
@@ -252,5 +252,8 @@ const GoalIconContainer = styled.div<GoalIconContainerProps>`
 `
 
 const AddIconButtonContainer = styled.div<AddIconButtonContainerProps>`
-display: ${(props) => (props.shouldShow ? 'flex' : 'none')};
+  display: ${(props) => (props.shouldShow ? 'flex' : 'none')};
+  position: absolute;
+  top: ${(props) => (props.hasIcon ? '10rem' : '2rem')};
+  left: 0;
 `
