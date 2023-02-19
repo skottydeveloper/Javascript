@@ -30,3 +30,10 @@
     - [ ] Uses `TransparentButton` component.
     - [ ] Displays the icon with `font-size: 5.5rem;`.
     - [ ] Opens the emoji picker component.
+
+  - [ ] Add PUT Request To Lib:
+    - [ ] Add PUT request to update Goal.
+  
+  - [ ] Finish Implementing `pickEmojiOnClick` Event Handler:
+    - [ ] Import updateGoal PUT request.
+    - [ ] Call updateGoal on click.
