@@ -98,6 +98,7 @@ export function GoalManager(props: Props) {
     }
 
     dispatch(updateGoalRedux(updatedGoal))
+    updateGoalApi(props.goal.id, updatedGoal)
   }
 
   const [icon, setIcon] = useState<string | null>(null)
