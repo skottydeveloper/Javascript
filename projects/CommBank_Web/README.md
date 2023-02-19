@@ -37,3 +37,13 @@
   - [ ] Finish Implementing `pickEmojiOnClick` Event Handler:
     - [ ] Import updateGoal PUT request.
     - [ ] Call updateGoal on click.
+    
+- [ ] Cover The `GetGoalsForUser` Route:
+  - [ ] Arrange and Act using `Get` as a model.
+  
+  - [ ] Assert that:
+    - [ ] `result` is not null.
+    
+  - [ ] For each `goal` in `result`, assert that:
+    - [ ] It is assignable from `Goal`.
+    - [ ] It has the expected `UserId`.
