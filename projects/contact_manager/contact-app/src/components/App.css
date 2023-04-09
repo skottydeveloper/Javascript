@@ -19,10 +19,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Change from center to flex-start */
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding-top: 20px; /* Add padding to the top */
 }
 
 .App-link {
