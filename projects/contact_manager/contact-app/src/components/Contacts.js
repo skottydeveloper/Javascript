@@ -9,7 +9,7 @@ const Contacts = ({ contacts }) => {
                 contacts.length
                     ?
                     <div className="text-start mt-0 mt-md-4">
-                        <table class="table table-hover">
+                        <table className="table table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col">Name</th>
