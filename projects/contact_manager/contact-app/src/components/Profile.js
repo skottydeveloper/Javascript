@@ -16,7 +16,7 @@ const Profile = ({ contact }) => {
     <>
       <tr className="mb-4" onClick={handleShow}>
         <td className="py-3">
-          <img className="ui avatar image" src={user} alt="user" />
+          <img className="user-avatar" src={user} alt="user" />
           <span>
             {name}
           </span>

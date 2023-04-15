@@ -3,7 +3,7 @@ import Contacts from './Contacts';
 
 const Home = () => {
   const [contacts, setContacts] = useState([]);
-  const [displayContacts, setDisplayContacts] = useState(0);
+  const [displayContacts, setDisplayContacts] = useState([]);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
