@@ -32,8 +32,8 @@ const Contacts = ({ contacts }) => {
               </tr>
             </thead>
             <tbody>
-              {contacts.map((user) => (
-                <Profile key={user.id} user={user}></Profile>
+              {contacts.map((contact) => (
+                <Profile key={contact.id} contact={contact}></Profile>
               ))}
             </tbody>
           </table>
