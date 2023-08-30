@@ -23,7 +23,7 @@
     "@angular/router": "~11.2.9",
     "cors": "^2.8.5",
     "csv-parse": "^4.15.4",
-    "mongodb": "^3.6.6",
+    "mongodb": "^3.6.10",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
