@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <title>Form a Story</title>
+    </head>
+
+    <body>
+        <section id="top">
+            <img src="https://content.codecademy.com/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+        </section>
+
+        <section id="main">
+            <h1>Complete the Form -<br> Complete the Story!</h1>
+            <hr>
+            <form action="story.html" method="GET">
+                <section class="animal-one">
+                    <label for="animal-1">Animal:</label>
+                    <input type="text" name="animal-1" id="animal-1" minlength="2" maxlength="20" pattern="[A-Za-z]" required>
+                </section>
+
+                <br>
+
+                <section class="animal-two">
+                    <label for="animal-2">Another Animal:</label>
+                    <input type="text" name="animal-2" id="animal-2" minlength="2" maxlength="20" pattern="[A-Za-z]" required>
+                </section>
+
+                <br>
+
+                <section class="animal-three">
+                    <label for="animal-3">One More Animal:</label>
+                    <input type="text" name="animal-3" id="animal-3" minlength="2" maxlength="20" pattern="[A-Za-z]" required>
+                </section>
+
+                <br>
+
+                <section class="adjective-one">
+                    <label for="adj-1">Adjective (ends in -ed):</label>
+                    <input type="text" name="adj-1" id="adj-1" minlength="6" maxlength="20" pattern="[A-Za-z]" required>
+                </section>
+
+                <br>
+
+                <section class="verb-one">
+                    <label for="verb-1">Verb (ends in -ing):</label>
+                    <input type="text" name="verb-1" id="verb-1" minlength="6" maxlength="20" pattern="[A-Za-z]" required>
+                </section>
+
+                <br>
+
+                <section class="number-one">
+                    <label for="num-1">Number:</label>
+                    <input type="number" name="num-1" id="num-1" min="0" max="100" required>
+                </section>
+
+                <br>
+
+                <section class="y/n-one">
+                    <span>Yes or No:</span>
+                    <br>
+                    <input type="radio" name="answer" id="yes" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="answer" id="no" value="no">
+                    <label for="no">No</label>
+                </section>
+
+                <br>
+
+                <section class="speed-one">
+                    <label for="speed">Relative speed (ends in -er):</label>
+                    <select name="speed" id="speed" required>
+                        <option value="quicker">Quicker</option>
+                        <option value="faster">Faster</option>
+                        <option value="speedier">Speedier</option>
+                    </select>
+                </section>
+
+                <br>
+
+                <section class="speed-one">
+                    <label for="quote">Motivational Quote:</label>
+                    <input list="quote-choices" id="quote" name="quote" required>
+                    <datalist id="quote-choices">
+                        <option value="winner gets ice cream!"></option>
+                        <option value="winner gets chocolate!"></option>
+                        <option value="winner gets apple pie!"></option>
+                    </datalist>
+                </section>
+
+                <br>
+
+                <section class="extra-info">
+                    <label for="message">Meaningful Message:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="8" cols="40" minlength="5" maxlength="80"></textarea>
+                </section>
+
+                <br>
+
+                <section class="submission">
+                    <input type="submit" value="Form My Story!">
+                </section>
+
+                <br>
+            </form>
+        </section>
+    </body>
+</html>
