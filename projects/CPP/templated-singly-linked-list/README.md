@@ -1,3 +1,0 @@
-# Templated Singly Linked List
-## Summary
-This is a C++ implementation of a singly linked list data structure. It includes member functions for adding and removing elements at the front or at a specified position of the list, returning the first element, printing out the list, checking if the list is empty or getting the size of the list. It also includes functions for sorting and merging two sorted lists. The implementation uses a Node class that contains a data member variable and a pointer to the next Node object, as well as a Forward_list class that holds a size member variable and a head pointer that points to the first Node in the list.
