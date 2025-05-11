@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+ 
+<GridPane xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="controller.SessionController"
+          prefHeight="600.0" 
+          prefWidth="650.0"
+          hgap="10" 
+          vgap="10" 
+          styleClass="background">
+    
+    <Label styleClass="label-header" 
+           text="STPFX" 
+           GridPane.columnIndex="2" 
+           GridPane.rowIndex="1"/>
+    
+    <Label styleClass="label-opac"
+           text="Payroll Management System" 
+           GridPane.columnIndex="2" 
+           GridPane.rowIndex="2"/>
+    
+    <HBox alignment="top_right" 
+          spacing="10" 
+          GridPane.columnIndex="17" 
+          GridPane.rowIndex="1"
+          GridPane.columnSpan="17">
+        
+        <Button text="Login" onAction="#viewLogin"/>
+        <Button text="Exit" onAction="#exitProgram"/>
+    </HBox>
+    
+    <VBox GridPane.columnSpan="35" 
+        GridPane.rowIndex="8">
+        <Separator/>
+    </VBox>
+    
+    <HBox alignment="bottom_right"
+          GridPane.rowIndex="18" 
+          GridPane.columnSpan="27">
+        <ImageView>
+            <image> 
+                <Image url="@stp.jpg"/>
+            </image>
+        </ImageView>
+    </HBox>
+        
+    <stylesheets> 
+        <URL value="@stpfx.css"/> 
+    </stylesheets>
+</GridPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="controller.STPController"
+          prefHeight="1000.0" 
+          prefWidth="600.0"
+          hgap="10" 
+          vgap="10" 
+          styleClass="background">
+    
+    <VBox spacing="10"
+          GridPane.rowIndex="4">
+        <TableView prefHeight="600" prefWidth="600">
+            <columns>
+                <TableColumn text="Name" prefWidth="120"/>
+                <TableColumn text="Wages" prefWidth="120"/>
+                <TableColumn text="Tax" prefWidth="120"/>
+                <TableColumn text="Net" prefWidth="120"/>
+                <TableColumn text="Super" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </VBox>
+    
+    <stylesheets> 
+        <URL value="@stpfx.css"/> 
+    </stylesheets>
+</GridPane>

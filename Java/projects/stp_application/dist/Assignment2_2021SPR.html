@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Assignment2_2021SPR.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJBc3NpZ25tZW50Ml8yMDIxU1BSLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5Bc3NpZ25tZW50Ml8yMDIxU1BSPC90aXRsZT4KICAgIDx2ZW5kb3I+YW5kcmVhc3Nrb3RhZGlzPC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICA8b2ZmbGluZS1hbGxvd2VkLz4KICA8L2luZm9ybWF0aW9uPgogIDxyZXNvdXJjZXM+CiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IkFzc2lnbm1lbnQyXzIwMjFTUFIuamFyIiBzaXplPSI2ODMwNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogIDwvcmVzb3VyY2VzPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJTVFBmeEFwcCIgIG5hbWU9IkFzc2lnbm1lbnQyXzIwMjFTUFIiIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedSTPfxApp() {
+        dtjava.embed(
+            {
+                id : 'STPfxApp',
+                url : 'Assignment2_2021SPR.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJBc3NpZ25tZW50Ml8yMDIxU1BSLmpubHAiPgogIDxpbmZvcm1hdGlvbj4KICAgIDx0aXRsZT5Bc3NpZ25tZW50Ml8yMDIxU1BSPC90aXRsZT4KICAgIDx2ZW5kb3I+YW5kcmVhc3Nrb3RhZGlzPC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICA8b2ZmbGluZS1hbGxvd2VkLz4KICA8L2luZm9ybWF0aW9uPgogIDxyZXNvdXJjZXM+CiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IkFzc2lnbm1lbnQyXzIwMjFTUFIuamFyIiBzaXplPSI2ODMwNCIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogIDwvcmVzb3VyY2VzPgogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJTVFBmeEFwcCIgIG5hbWU9IkFzc2lnbm1lbnQyXzIwMjFTUFIiIC8+CiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+Cjwvam5scD4K'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedSTPfxApp);
+</script>
+
+</head><body>
+<h2>Test page for <b>Assignment2_2021SPR</b></h2>
+  <b>Webstart:</b> <a href='Assignment2_2021SPR.jnlp' onclick="return launchApplication('Assignment2_2021SPR.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

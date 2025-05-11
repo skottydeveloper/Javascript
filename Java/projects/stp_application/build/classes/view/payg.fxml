@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="controller.PAYGController"
+          prefHeight="350.0" 
+          prefWidth="605.0"
+          hgap="10" 
+          vgap="10" 
+          styleClass="background">
+    
+        <VBox GridPane.rowIndex="3"
+          GridPane.columnIndex="1">
+        
+        <Label styleClass="label-h2" 
+               text="PAYG Annual Report:"/>
+    </VBox>
+    
+    <VBox alignment="center_left"
+          GridPane.rowIndex="4"
+          GridPane.rowSpan="8"
+          GridPane.columnIndex="1">
+        
+        <HBox alignment="center_left"  
+              spacing="10">
+                
+            <Label text="Weekly Paid Hours:" styleClass="label"/>
+            <Text text='hours' styleClass="text-out"/>
+        </HBox>
+            
+        <HBox alignment="center_left"  
+              spacing="47">
+            
+            <Label text="Gross Income:" styleClass="label"/>
+            <Text text="${'$'}" styleClass="text-out"/>
+        </HBox>
+            
+        <HBox alignment="center_left"  
+              spacing="68">
+            
+            <Label text="Net Income:" styleClass="label"/>
+            <Text text="${'$'}" styleClass="text-out"/>
+        </HBox>
+            
+        <HBox alignment="center_left"  
+              spacing="31">
+            
+            <Label text="Superannuation:" styleClass="label"/>
+            <Text text="${'$'}" styleClass="text-out"/>
+        </HBox>  
+    </VBox>  
+    
+    <VBox alignment="center_left"
+          GridPane.rowIndex="4"
+          GridPane.rowSpan="8"
+          GridPane.columnIndex="2">
+        
+        <HBox alignment="center_left"  
+              spacing="23">
+            
+            <Label text="Hourly Pay Rate:" styleClass="label"/>
+            <Text text="${'$'}" styleClass="text-out"/>
+        </HBox>
+        
+        <HBox alignment="center_left"  
+              spacing="75">
+               
+            <Label text="TAX Rate:" styleClass="label"/>
+            <Text text="${'%'}" styleClass="text-out"/>
+        </HBox> 
+        
+        <HBox alignment="center_left"  
+              spacing="69">
+            
+            <Label text="Deduction:" styleClass="label"/>
+            <Text text="${'$'}" styleClass="text-out"/>
+        </HBox>
+        
+        <HBox alignment="center_left"  
+              spacing="62">
+            
+            <Label text="Super Rate:" styleClass="label"/>
+            <Text text="${'%'}" styleClass="text-out"/>
+        </HBox>  
+    </VBox>
+        
+    <VBox spacing="10"
+          alignment="bottom_center"
+          GridPane.rowIndex="18"
+          GridPane.columnIndex="1"
+          GridPane.columnSpan="10" > 
+        
+        <HBox alignment="center" spacing="10" >
+            <Button text="Close" onAction="#closePAYG"/>
+        </HBox>
+    </VBox>
+    
+    <stylesheets> 
+        <URL value="@stpfx.css"/> 
+    </stylesheets>
+</GridPane>

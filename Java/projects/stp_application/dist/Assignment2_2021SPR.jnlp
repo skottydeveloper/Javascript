@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Assignment2_2021SPR.jnlp">
+  <information>
+    <title>Assignment2_2021SPR</title>
+    <vendor>andreasskotadis</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Assignment2_2021SPR.jar" size="68304" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="STPfxApp"  name="Assignment2_2021SPR" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,1 @@
+idf_component_register(SRCS "buzzer.c" "pwm_buzzer.c" INCLUDE_DIRS ".")

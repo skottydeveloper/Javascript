@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="controller.EmployerController"
+          prefHeight="400.0" 
+          prefWidth="600.0"
+          hgap="10" 
+          vgap="10" 
+          styleClass="background">
+    
+    <Label styleClass="label-h2" 
+           text="Filters" 
+           GridPane.rowIndex="1"/>
+    
+    <HBox spacing="10"
+          GridPane.rowIndex="2"
+          alignment="center">
+        
+        <Label text="Name:" styleClass="label-opac"/>
+        <TextField fx:id="name"/>
+        
+        <Label text="Email:" styleClass="label-opac"/>
+        <TextField fx:id="email"/>
+    </HBox>
+    
+    <VBox GridPane.rowIndex="3">
+        <Separator/>
+    </VBox>
+    
+    <VBox spacing="10"
+          GridPane.rowIndex="4">
+        <TableView fx:id="employeesTv" 
+                   prefHeight="220" 
+                   prefWidth="600"
+                   items="${controller.employer.employees}">
+            <placeholder><Label text="Employees list is not loaded"/></placeholder>
+            <columns>
+                <TableColumn text="Name" prefWidth="195">
+                    <cellValueFactory><PropertyValueFactory property="name"/></cellValueFactory>
+                </TableColumn>
+                
+                <TableColumn text="Email" prefWidth="195">
+                    <cellValueFactory><PropertyValueFactory property="email"/></cellValueFactory>
+                </TableColumn>
+                
+                <TableColumn text="Phone" prefWidth="195">
+                    <cellValueFactory><PropertyValueFactory property="phone"/></cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </VBox>
+    
+    <VBox GridPane.rowIndex="5">
+        <Separator/>
+    </VBox>
+    
+    <VBox spacing="10"
+          GridPane.rowIndex="6">
+ 
+        <HBox spacing="10"
+              alignment="center">
+            <Button fx:id="addButton" text="Add" onAction="#addEmployee"/>
+            <Button fx:id="deleteButton" text="Delete" onAction="#deleteEmployee"/>
+            <Button fx:id="selectButton" text="Select" onAction="#selectEmployee"/>
+            <Button fx:id="PAYGButton" text="PAYG" onAction="#viewPAYG"/>
+            <Button fx:id="STPButton" text="STP" onAction="#viewSTP"/>
+            <Button fx:id="closeButton" text="Close" onAction="#exitEmployerMenu"/>
+        </HBox> 
+    </VBox> 
+    
+    <stylesheets> 
+        <URL value="@stpfx.css"/> 
+    </stylesheets>  
+</GridPane>
