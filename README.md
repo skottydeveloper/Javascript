@@ -10,6 +10,6 @@ This repository contains a collection of coding projects completed throughout my
 - **JavaScript**: Front-end focused scripts and browser-based logic.
 
 ## Other Projects
-In addition to the contents of this repository, I have also developed and published **three Swift-based iOS applications**, available on the App Store. These reflect my ability to build and ship complete mobile solutions independently.
+In addition to the contents of this repository, I have also developed and published three **Swift**-based iOS applications, available on the App Store. These reflect my ability to build and ship complete mobile solutions independently.
 
 **Link**: https://apps.apple.com/developer/andreas-skotadis/id1525168367
